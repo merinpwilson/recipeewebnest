@@ -1,0 +1,5 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+    <!-- Loop through the data array and pass each item to the CardComponent -->
+    <app-card *ngFor="let item of data" [data]="item"></app-card>
+  </div>
+  

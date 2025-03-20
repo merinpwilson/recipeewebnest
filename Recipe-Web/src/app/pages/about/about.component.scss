@@ -1,0 +1,58 @@
+.about-container {
+    padding: 20px;
+    background-color: #f5f2ed;  
+    color: #dc6e08;
+    font-size: large;
+    text-align: left;  
+  
+    h1 {
+      color: #d32f2f;  
+    }
+  
+   
+.banner {
+    width: 100%;
+    overflow: hidden;  
+  }
+  
+  /* Image style with animation */
+  .banner img {
+    width: 200%;  
+    height: 500px;  
+    object-fit: cover;  
+    
+    /* Animation properties */
+    animation: fadeInScale 3s ease-in-out;  
+  }
+  
+  /* Keyframes for fade-in and scale animation */
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;  /* Start with image invisible */
+      transform: scale(1.1);  /* Start with a slightly larger image */
+    }
+    50% {
+      opacity: 1;  /* Fully visible */
+      transform: scale(1);  /* Scale back to its original size */
+    }
+    100% {
+      opacity: 1;  /* Keep the image fully visible */
+      transform: scale(1);  /* Stay at the original size */
+    }
+  }
+  
+  
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #d32f2f;  
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      &:hover {
+        background-color: #d32f2f;  
+      }
+    }
+  }
+  
